@@ -1,0 +1,48 @@
+@import '../../styles/mixins';
+
+.cookie-agreement{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: $color-base;
+  z-index: 21;
+  user-select: none;
+  transition: $transition-speed*3;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  //@include shadow-for-fixed-element;
+}
+.cookie-agreement_visible{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1s;
+}
+.cookie-agreement__wrapper{
+  text-align: center;
+  width: 100%;
+  max-width: $breakpoint-lg;
+  margin: 0 auto;
+  padding: $block-space_half;
+  overflow: hidden;
+  >*:not(.cookie-agreement__controls),
+  .cookie-agreement__controls>*{
+    margin: $block-space_half;
+  }
+  p{
+    display: inline-block;
+    line-height: 1;
+  }
+  a{
+    color: $color-brand;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.cookie-agreement__controls{
+  display: inline-block;
+}

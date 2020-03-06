@@ -1,0 +1,38 @@
+// See grid library
+$block-space: 16px;
+$block-space_half: $block-space/2;
+$block-space_quarter: $block-space_half/2;
+$around-space-factor: 2;
+
+// Same breakpoints for js in index.js
+$breakpoint-us: 320px;
+$breakpoint-xs: 460px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1600px;
+
+$aos-distance: $block-space*2;
+
+$font-text-name: 'Open Sans';
+$font-title-name: $font-text-name;
+
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-lg: 14px;
+$font-size-xl: 15px;
+$line-height: 1.618;
+
+// Base colors
+$color-brand: #005b9f;
+$color-base: #fcfcfc;
+$color-text: #1a1a1a;
+
+$color-fade: #161618;
+
+$color-error: #e0603f;
+$color-success: #2fad4c;
+$color-info: #006fc2;
+
+$transition-speed: 0.25s;

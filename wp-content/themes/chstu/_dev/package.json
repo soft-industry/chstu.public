@@ -1,0 +1,46 @@
+{
+  "name": "chstu",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">= 10.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.soft-industry.com/frontend/chstu"
+  },
+  "main": "templates/index/index.js",
+  "scripts": {
+    "b": "webpack --bail -p",
+    "w": "webpack -d -w"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.12.0",
+    "po2mo-loader": "^1.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.3.1",
+    "script-loader": "^0.7.2",
+    "svg-inline-loader": "^0.8.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^1.0.1",
+    "webapp-webpack-plugin": "^2.7.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%"
+  ]
+}

@@ -1,0 +1,32 @@
+@import '../../styles/mixins';
+
+.media-links{
+  display: flex;
+  margin: $block-space (-$block-space_half) ($block-space*2);
+}
+.media-links__item{
+  flex-grow: 1;
+  margin: $block-space_half;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $block-space $block-space;
+  span{
+    display: none;
+  }
+}
+.media-links__item_tw{
+  background-color: #429cd6;
+  background-image: url(./images/twitter.svg?inline-css);
+}
+.media-links__item_li{
+  background-color: #0d77b7;
+  background-image: url(./images/linkedin.svg?inline-css);
+}
+.media-links__item_fb{
+  background-color: #4267B2;
+  background-image: url(./images/facebook.svg?inline-css);
+}
+.media-links__item_cb{
+  background-color: #585858;
+  background-image: url(./images/copy.svg?inline-css);
+}
